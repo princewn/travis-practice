@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ftcp</title>
+    <link href="/css/base.css" rel="stylesheet">
+    <link href="/css/index.css" rel="stylesheet">
+    <link href="/css/header.css" rel="stylesheet">
+    <link href="/css/left.css" rel="stylesheet">
+    <link href="/css/right.css" rel="stylesheet">
+	<link href="/css/footer.css" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="https://secure.assets.tumblr.com/assets/styles/global.css?_v=b505aaf1b37bdbca39924689977b0083">
+    <link rel="stylesheet" media="screen" href="http://g.alicdn.com/sj/dpl/1.5.1/css/sui.min.css">
+    <link rel="stylesheet" media="screen" href="/css/ftcp.css">   
+	<!--空心T-->
+    <meta name="theme-color" content="#36465d">
+</head>
+<body id="dashboard_index"
+class="is_dashboard identity base identity-refresh post-typography-update dashboard_index logged_in with_auto_paginate layout_standard">
+    <div class="l-header-container l-header-container--refresh" prima-component="header">
+        <div class="l-header ">
+            <h1 class="logo">
+                <a class="logo-anchor" href="#" aria-label="Tumblr">
+                    <svg class="svg-logo" prima-component="svg-logo" width="29px" height="39px"
+                    viewBox="0 0 29 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <pattern id="rollover" width="1" height="1" viewBox="0 0 100 100" preserveAspectRatio="none">
+                            <image id="rollover-image" xlink:href="https://secure.assets.tumblr.com/images/logo/hover-animations/1.gif"
+                            width="100" height="100" preserveAspectRatio="none">
+                            </image>
+                        </pattern>
+                        <g id="main-logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<!--T黑色阴影-->
+                            <path class="large-shadow" d="M21.9956664,26.3 L21.9956664,19.0055544 L27.9954227,19.0055542 L27.9954227,13.0048828 L27.9954227,11.0108643 L23.522766,11.0108643 L23.5540067,11.6669807 L23.7388305,15.5486452 L17.6832886,15.4792482 L17.4,24 C17.5,26.3 18.8,26.5 19.8,26.5 C20.2,26.5 21.4956664,26.4 21.9956664,26.3 Z M18.7154541,4.00225829 L17.4,2.9 L17.4,8 L22.000122,7.34490957 L22.000122,4.00225829 L18.7154541,4.00225829 Z M24.3,29.6 L24.9,31.5 C23.8,32.9 21,34 18.4,34 L18.1,34 C16.3,34 14.8,33.7 13.6,33.2 C15,35.4 17.5999998,38.0021971 21.7999998,38.0021971 C21.7999996,38.6099361 22.0022113,38.0021971 22.0999998,38.0021971 C24.6999998,38.0021971 27.4,36.1 28.6,34.7 L26.7,28.8 C26,29.2 25.1,29.5 24.3,29.6 Z"
+                            id="Shape" fill="#000000">
+                            </path>
+							<!--背后条纹-->
+							<path class="inner" d="M18.5,33.6 L18.3,33.6 C11.1,33.6 9,28.2005493 9,25.0005493 L9,15 C8.58245849,15 4.99298096,15 5,15 L4.99298096,10.0285034 C4.99298096,9.92850342 5.1,9.9 5.2,9.9 C8.9,8.5 11.3,6.7 11.9,2.3 C11.8,2 12,2 12,2 L16.8,2 L17,2 L17,9.00006104 L23.012207,9.00006104 L23.012207,15 L17,15 L17,24.0839844 C17,26.1839844 17.8,27.3 19.8,27.3 C20.6,27.3 21.5,27.1 22.4,26.8 C22.5,26.8 22.6,26.8 22.6,26.9 L24.1,31.3 L24.1,31.7 C23,32.8 20.7,33.6 18.5,33.6 Z">
+                            </path>
+                            <path class="outer" d="M26.1,32.2 L26.3,31.9 L23.9,25.1 C23.9,25 23.8,25 23.8,25 L19.2,25 C19.1,25 19,25.1 19,25 C18.9,24.8 19,24.4 19,24.1 L19,17 L25,17 L25,7 C25,7 19,7 19,7 L19,0 L8,0 C7.3,0 6.4,0.8 6.3,1.8 C5.8,5.9 4.1,7.5 0.5,8.7 L0.1,8.8 C0,8.9 0,8.9 0,9 L0,17.0000006 C0,17.1000006 0.1,17 0.1,17 L4,17 L4,24.8 C4,31.8 8.46560059,36.0067139 17.3656006,36.0067139 C22.0656006,36.0067139 25,33.7 26.1,32.2 Z M18.5,33.6 L18.3,33.6 C11.1,33.6 9,28.2005493 9,25.0005493 L9,15 C8.58245849,15 4.99298096,15 5,15 L4.99298096,10.0285034 C4.99298096,9.92850342 5.1,9.9 5.2,9.9 C8.9,8.5 11.3,6.7 11.9,2.3 C11.8,2 12,2 12,2 L16.8,2 L17,2 L17,9.00006104 L23.012207,9.00006104 L23.012207,15 L17,15 L17,24.0839844 C17,26.1839844 17.8,27.3 19.8,27.3 C20.6,27.3 21.5,27.1 22.4,26.8 C22.5,26.8 22.6,26.8 22.6,26.9 L24.1,31.3 L24.1,31.7 C23,32.8 20.7,33.6 18.5,33.6 Z">
+                            </path>
+                            <path class="small-shadow" d="M4,19 L7,19 L7,17.0833333 C7,17 6.9,17 6.9,17 L4,17 L4,19 L4,19 Z"
+                            opacity="0.5" fill="#37465D">							
+                            </path>														
+						</g>
+                    </svg>
+                </a>
+            </h1>
+        </div>
+    </div>
+
+<div class="clear-both"></div>
+<button data-toggle="modal" data-target="#myModal" data-keyboard="false" class="sui-btn btn-primary btn-lg">对话框已写入html</button>
+<!-- Modal-->
+<div id="myModal" tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" data-dismiss="modal" aria-hidden="true" class="sui-close">×</button>
+        <h4 id="myModalLabel" class="modal-title">添加测试</h4>
+      </div>
+      <div class="modal-body">
+      	
+		<form class="sui-form form-horizontal">
+		  <div class="control-group">
+		    <label for="inputEmail" class="control-label">仓库地址：</label>
+		    <div class="controls">
+		      <input type="text" id="inputEmail" placeholder="Email">
+		    </div>
+		  </div>
+		  <div class="control-group">
+		    <label for="inputPassword" class="control-label">密码：</label>
+		    <div class="controls">
+		      <input type="password" id="inputPassword" placeholder="Password">
+		    </div>
+		  </div>
+		  <div class="control-group">
+		    <label class="control-label"></label>
+		    <div class="controls">
+		      <label data-toggle="checkbox" class="checkbox-pretty inline">
+		        <input type="checkbox" name="remember-me"><span>记住该仓库地址</span>
+		      </label>
+		    </div>
+		  </div>
+		  <div class="control-group">
+		    <label for="inputEmail" class="control-label">测试名称：</label>
+		    <div class="controls">
+		      <input type="text" id="inputEmail" placeholder="Email">
+		    </div>
+		  </div>
+		  <span id="dropdown-demo2" class="sui-dropdown"><a id="drop2" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown">全部  <i class="caret"></i></a>
+			<ul id="menu2" role="menu" aria-labelledby="drop2" class="sui-dropdown-menu">
+			  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">单元测试</a></li>
+			  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">覆盖率测试</a></li>
+			  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">兼容性测试</a></li>
+			  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">功能测试</a></li>			  			  
+			  <li role="presentation" class="divider"></li>
+			  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">全部       </a></li>
+			</ul></span>
+		</form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" data-ok="modal" class="sui-btn btn-primary btn-large">确定</button>
+        <button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large">取消</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="clear-both"></div>
+
+
+
+    <div class="l-container l-container--two-column-dashboard">
+        <div class="l-content clearfix">
+            <div id="right_column" class="right_column">
+				<div class="controls_section follow_list user_list is_rendering recommended_tumblelogs">
+                    <li class="section_header no_push recommended-blogs-unit-header">
+                        相关技术介绍
+                    </li>
+                    <li class="item">
+                        <a href="#" class="follow_list_item_blog blog has_follow_button"
+                         target="blank">
+                            <div class="hide_overflow  has_follow_button">
+                                <span class="tumblelog_title">
+                                    node
+                                    <span>
+                                        <br>
+                                        <small class="tumblelog_name">
+                                            基于 Chrome V8 引擎的 JavaScript 运行环境
+                                        </small>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="avatar">
+                                <img src="" class="avatar_img"
+                                alt="">
+                            </div>
+                        </a>
+                        <a class="follow plus-follow-button" href="https://github.com/nodejs/node" title="git">
+                            <i class="sui-icon icon-touch-ellipsis"></i>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="http://sickstreetwear.tumblr.com/" class="follow_list_item_blog blog has_follow_button"
+                        data-pt="false" target="blank" style="">
+                            <div class="hide_overflow  has_follow_button">
+                                <span class="tumblelog_title">
+                                    npm
+                                    <span>
+                                        <br>
+                                        <small class="tumblelog_name">
+                                            NodeJS包管理和分发工具
+                                        </small>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="avatar">
+                                <img src="" class="avatar_img"
+                                alt="">
+                            </div>
+                        </a>
+                        <a class="follow plus-follow-button" href="https://github.com/nodejs/node" title="git">
+                            <i class="sui-icon icon-touch-ellipsis"></i>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="follow_list_item_blog blog has_follow_button"
+                        data-pt="false" target="blank">
+                            <div class="hide_overflow  has_follow_button">
+                                <span class="tumblelog_title">
+                                    grunt
+                                    <span>
+                                        <br>
+                                        <small class="tumblelog_name">
+                                            基于Node.js的项目构建工具
+                                        </small>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="avatar">
+                                <img src="" class="avatar_img"
+                                alt="">
+                            </div>
+                        </a>
+                        <a class="follow plus-follow-button" href="https://github.com/nodejs/node" title="git">
+                            <i class="sui-icon icon-touch-ellipsis"></i>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="follow_list_item_blog blog has_follow_button"
+                        data-pt="false" target="blank">
+                            <div class="hide_overflow  has_follow_button">
+                                <span class="tumblelog_title">
+                                    karma
+                                    <span>
+                                        <br>
+                                        <small class="tumblelog_name">
+                                            测试框架，Angularjs团队开发
+                                        </small>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="avatar">
+                                <img src="" class="avatar_img"
+                                alt="">
+                            </div>
+                        </a>
+                        <a class="follow plus-follow-button" href="https://github.com/nodejs/node" title="git">
+                            <i class="sui-icon icon-touch-ellipsis"></i>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="follow_list_item_blog blog has_follow_button"
+                        data-pt="false" target="blank">
+                            <div class="hide_overflow  has_follow_button">
+                                <span class="tumblelog_title">
+                                    phantomjs
+                                    <span>
+                                        <br>
+                                        <small class="tumblelog_name">
+                                            基于 WebKit 的服务器端 JavaScript API
+                                        </small>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="avatar">
+                                <img src="" class="avatar_img"
+                                alt="">
+                            </div>
+                        </a>
+                        <a class="follow plus-follow-button" href="https://github.com/nodejs/node" title="git">
+                            <i class="sui-icon icon-touch-ellipsis"></i>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="follow_list_item_blog blog has_follow_button"
+                        data-pt="false" target="blank">
+                            <div class="hide_overflow  has_follow_button">
+                                <span class="tumblelog_title">
+                                    mocha
+                                    <span>
+                                        <br>
+                                        <small class="tumblelog_name">
+                                            nodejs的单元测试
+                                        </small>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="avatar">
+                                <img src="" class="avatar_img"
+                                alt="">
+                            </div>
+                        </a>
+                        <a class="follow plus-follow-button" href="https://github.com/nodejs/node" title="git">
+                            <i class="sui-icon icon-touch-ellipsis"></i>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="follow_list_item_blog blog has_follow_button"
+                        data-pt="false" target="blank">
+                            <div class="hide_overflow  has_follow_button">
+                                <span class="tumblelog_title">
+                                    should
+                                    <span>
+                                        <br>
+                                        <small class="tumblelog_name">
+                                            断言库
+                                        </small>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="avatar">
+                                <img src="" class="avatar_img"
+                                alt="">
+                            </div>
+                        </a>
+                        <a class="follow plus-follow-button" href="https://github.com/nodejs/node" title="git">
+                            <i class="sui-icon icon-touch-ellipsis"></i>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="follow_list_item_blog blog has_follow_button"
+                        data-pt="false" target="blank">
+                            <div class="hide_overflow  has_follow_button">
+                                <span class="tumblelog_title">
+                                    Istanbul
+                                    <span>
+                                        <br>
+                                        <small class="tumblelog_name">
+                                            代码覆盖率工具
+                                        </small>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="avatar">
+                                <img src="" class="avatar_img"
+                                alt="">
+                            </div>
+                        </a>
+                        <a class="follow plus-follow-button" href="https://github.com/nodejs/node" title="git">
+                            <i class="sui-icon icon-touch-ellipsis"></i>
+                        </a>
+                    </li> 
+                    <li class="item">
+                        <a href="#" class="follow_list_item_blog blog has_follow_button"
+                        data-pt="false" target="blank">
+                            <div class="hide_overflow  has_follow_button">
+                                <span class="tumblelog_title">
+                                    travis ci
+                                    <span>
+                                        <br>
+                                        <small class="tumblelog_name">
+                                            持续集成构建
+                                        </small>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="avatar">
+                                <img src="" class="avatar_img"
+                                alt="">
+                            </div>
+                        </a>
+                        <a class="follow plus-follow-button" href="https://github.com/nodejs/node" title="git">
+                            <i class="sui-icon icon-touch-ellipsis"></i>
+                        </a>
+                    </li>                                                    
+                </div>    
+                <div class="clear">
+                </div>
+            </div>
+            <div id="left_column" class="left_column">
+                <ol id="posts" class="posts  has-site-notifications">
+                    <li class="post_container new_post_buttons_container" id="new_post_buttons">
+                        <div class="new_post_buttons post post_full  is_mine with_avatar new_post"
+                        id="new_post">
+                            <nav id="post_buttons" class="post_buttons clearfix" role="menu" data-js-postbuttons="">
+                                <a href="javascript:void(0)" class="new_post_label"
+                                id="new_post_label_text" role="menuitem" data-post-type="regular" data-post-endpoint="text"
+                                data-js-text="">
+									<i class="sui-icon icon-touch-circle"></i>
+                                    <span class="new_post_label_text">
+                                        单元测试
+                                    </span>
+                                </a>
+                                <a href="javascript:void(0)" class="new_post_label"
+
+                                id="new_post_label_photo" role="menuitem" data-post-type="photo" data-js-photo="">
+									<i class="sui-icon icon-touch-association2"></i>
+                                    <span class="new_post_label_text">
+                                        覆盖率测试
+                                    </span>
+                                </a>
+                                <a href="javascript:void(0)" class="new_post_label"
+                                id="new_post_label_quote" role="menuitem" data-post-type="quote" data-js-quote="">
+									<i class="sui-icon icon-touch-linechart"></i>
+                                    <span class="new_post_label_text">
+                                        UI测试
+                                    </span>
+                                </a>
+                                <a href="javascript:void(0)" class="new_post_label"
+                                id="new_post_label_audio" role="menuitem" data-post-type="audio" data-js-audio="">
+                                    <i class="sui-icon icon-touch-light"></i>
+                                    </i>
+                                    <span class="new_post_label_text">
+                                        功能测试
+                                    </span>
+                                </a>
+                                <a href="javascript:void(0)" class="new_post_label"
+                                id="new_post_label_video" role="menuitem" data-post-type="video" data-js-video="">
+                                    <i class="sui-icon icon-touch-four"></i>
+                                    <span class="new_post_label_text">
+                                        全部
+                                    </span>
+                                </a>
+
+
+
+
+
+
+
+
+                            </nav>
+                            <div class="post_avatar tumblelog-avatar">
+                                <a class="post_avatar_link" id="post_controls_avatar" href="http://princewangwangwang.tumblr.com/"
+                                target="_blank" style="background-color:#FFF">
+<svg width="64" height="64" viewBox="0 0 32 32">
+    <g class="transform-group">
+      <g transform="translate(0, 28.0) scale(1, -1) scale(0.03125, 0.03125)">
+        <path d="M526.599 731.421c244.502 0 443.451-198.919 443.451-443.392 0-244.502-198.949-443.451-443.451-443.451-244.473 0-443.392 198.949-443.392 443.451-0 244.473 198.919 443.392 443.392 443.392M526.599 789.936c-277.211 0-501.906-224.724-501.906-501.906 0-277.241 224.724-501.965 501.906-501.965 277.241 0 501.965 224.753 501.965 501.965 0 277.211-224.724 501.906-501.965 501.906v0zM679.76 267.579l-265.479-265.45c-11.264-11.293-29.55-11.293-40.843 0-11.264 11.264-11.264 29.55 0 40.843l245.029 245.029-245.029 244.999c-11.264 11.293-11.264 29.579 0 40.843 11.293 11.264 29.579 11.264 40.843 0l265.479-265.45c11.293-11.235 11.293-29.52 0-40.814z" fill="#737383"></path>
+      </g>
+    </g>
+  </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- START POSTS -->
+                    <li  class="post_container" >
+                        <div class="post post_full is_photo post_tumblelog_8608986d3a26e7545a94b6737148ecf8 not_mine is_reblog with_permalink no_source generic_source"
+                        id="post_119234251893" >
+                            <div id="avatarFixed" class="post_avatar show_user_menu ">
+                                
+                            	<div class="post_avatar_wrapper ">
+                                    <a class="post_avatar_link" href="#"
+                                    target="_blank" title="运行结果" id="post_avatar_119234251893" style="background-color:#FFF">
+<svg width="64" height="64" viewBox="0 0 32 32">
+    <g class="transform-group">
+      <g transform="translate(0, 28.0) scale(1, -1) scale(0.03125, 0.03125)">
+        <path d="M797.750581 749.628464 226.257605 749.628464c-63.126736 0-114.296139-51.169403-114.296139-114.300232l0-475.229538c0-63.124689 51.169403-114.296139 114.296139-114.296139l571.492976 0c63.119573 0 114.286929 51.172473 114.286929 114.296139L912.037511 635.328231C912.037511 698.459061 860.870154 749.628464 797.750581 749.628464zM650.71069-8.736597c0 10.775414-7.777127 19.49603-17.339924 19.49603L390.636397 10.759433c-9.565866 0-17.337877-8.719592-17.337877-19.49603l0-77.979002L199.921797-86.715599l0-58.480926 624.151289 0 0 58.480926L650.71069-86.715599 650.71069-8.736597 650.71069-8.736597 650.71069-8.736597zM747.7764 494.432271 509.66635 256.314035c-2.345418-5.717212-5.833869-11.089569-10.463306-15.72617l0-0.032746c-10.04375-10.032494-23.430642-14.682397-36.569894-13.95892-13.053294-0.695848-26.349111 3.934612-36.335556 13.897521l0 0.022513c-4.565992 4.574179-8.015557 9.850345-10.345626 15.476483L276.286022 395.687316c-18.730597 18.71934-18.730597 49.064462 0 67.779709l0 0.032746c18.720364 18.707061 49.076742 18.707061 67.803245 0L462.906373 344.660152l217.323631 217.336934c18.658965 18.632359 48.886407 18.632359 67.538209 0l0.008186 0C766.430248 543.346307 766.430248 513.092259 747.7764 494.432271L747.7764 494.432271z" fill="#737383"></path>
+      </g>
+    </g>
+  </svg>
+                                    </a>
+                                </div>
+							</div>
+                            <div class="post_wrapper">
+                                <div class="post_header">
+                                    <div class="post_info">
+                                        <div class="post_info_fence has_follow_button">
+                                            <span class="reblog_source">
+                                                <span class="reblog_icon">
+                                                    <i class="sui-icon icon-touch-setting"></i>           
+                                                </span>
+                                                <a class="post_info_link" title="krizmarphotography" href="http://krizmarphotography.tumblr.com/post/114011591624/sunset-in-queens"
+                                                >
+                                                    运行结果
+                                                </a>
+                                            </span>
+										</div>
+                                    </div>
+                                </div>
+                                <div class="post_content clearfix">
+                                    <div class="post_content_inner clearfix">
+                                        <div class="post_media ">
+                                            <a class="post_media_photo_anchor rapid-noclick-resp high_res_link no_pop" alt="ClubLife"
+                                            href="#" >
+                                                <!--blog第一张博客-->
+<img id="bolgImage1" class="post_media_photo image" alt="" width="540" height="540" style="width: 540px; height: 540px;">                                            </a>
+                                        </div>
+                                        <div class="post_body">
+                                            <p>
+                                                <a href="http://krizmarphotography.tumblr.com/post/114011591624/sunset-in-queens">
+                                                    使用帮助
+                                                </a>
+                                                :
+                                            </p>
+                                            <blockquote>
+                                                <p>
+                                                    持续集成相关请见具体代码仓库，如果未启用持续集成功能，请参照travias-ci进行配置后方可使用。
+                                                </p>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post_tags">
+                                    <div class="post_tags_inner">
+                                        <a class="post_tag" href="https://tumblr.com/tagged/ClubLife" target="_blank">
+                                            单元测试
+                                        </a>
+                                        <a class="post_tag" href="https://tumblr.com/tagged/Travel" target="_blank">
+                                            覆盖率测试
+                                        </a>
+                                        <a class="post_tag" href="https://tumblr.com/tagged/Queens" target="_blank">
+                                            UI测试
+                                        </a>
+                                        <a class="post_tag" href="https://tumblr.com/tagged/Sunset" target="_blank">
+                                            功能测试
+                                        </a>
+                                        <a class="post_tag" href="https://tumblr.com/tagged/Big-Apple" target="_blank">
+                                            运行全部
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post_footer clearfix" data-subview="footer">
+                                    <div class="post_notes" data-subview="notes">
+                                        <div class="post_notes_inner">
+                                            <div class="post_notes_label note_count">
+                                                <span class="note_link_current" title="155 則迴響" data-less="154 則迴響" data-more="156 則迴響">
+                                                    如果测试未通过或者覆盖率不满足需求，请修正代码后再次测试
+                                                </span>
+                                                <div class="notes_outer_container popover popover_gradient nipple_on_left"
+                                                style="display: none;">
+                                                    <div class="notes_container popover_inner">
+                                                        <div class="popover_scroll">
+                                                            <ol class="notes">
+                                                            </ol>
+                                                            <div class="more_notes_link_container">
+                                                                <span class="notes_loading">
+                                                                    正在載入...
+                                                                </span>
+                                                                <a class="more_notes_link" style="display:none;" data-next="" rel="nofollow"
+                                                                href="https://www.tumblr.com/dashboard#">
+                                                                    顯示更多迴響
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="post_controls" role="toolbar" data-subview="controls">
+                                        <div class="post_controls_inner">
+                                            <a class="post_control reblog" target="_blank" title="轉格" href="https://www.tumblr.com/reblog/119234251893/Iakc6Vmt?redirect_to=%2Fdashboard"
+                                            data-subview="reblog">
+                                            </a>
+                                            <div class="post_control like" title="喜歡" data-subview="like">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="post_permalink" id="permalink_119234251893" href="http://clublifebytiesto.com/post/119234251893/krizmarphotography-sunset-in-queens" target="_blank" title="檢視貼文 - 17/5/2015, 20:01">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <div class="clear">
+            </div>
+            <div id="pagination" class="pagination hidden">
+                <a id="next_page_link" href="https://www.tumblr.com/dashboard/2/119203374006"
+                class="next button chrome blue">
+                    下一頁
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="auto_pagination_loader" class="auto-pagination-loader">
+        <span id="auto_pagination_loader_loading" class="auto-pagination-loader-loading">
+            <div class="loading-container">
+                <div class="Knight-Rider-loader animate">
+                    <div class="Knight-Rider-bar">
+                    </div>
+                    <div class="Knight-Rider-bar">
+                    </div>
+                    <div class="Knight-Rider-bar">
+                    </div>
+                </div>
+            </div>
+        </span>
+        <span id="auto_pagination_loader_failure" class="auto-pagination-loader-failure"
+        style="display:none;">
+            抱歉，我們無法載入下一頁！&nbsp;
+            <a class="try-again" href="https://www.tumblr.com/dashboard#" onClick="Tumblr.AutoPaginator.start(); return false;">
+                請再試一次
+            </a>
+            。
+        </span>
+        <span id="auto_pagination_loader_no_posts" class="auto-pagination-loader-no-posts"
+        style="display:none;">
+            抱歉，我們找不到更多貼文！
+        </span>
+    </div>
+    <div id="report_tumblelog_bar" style="display:none;">
+        <span id="report_tumblelog_with_name" style="display:none;">
+            檢舉
+            <span id="report_tumblelog_name">
+            </span>
+            ？
+        </span>
+        <span id="report_tumblelog_without_name" style="display:none;">
+            檢舉此人？
+        </span>
+        <button class="chrome spam">
+            <div class="chrome_button">
+                <div class="chrome_button_left">
+                </div>
+                垃圾內容
+                <div class="chrome_button_right">
+                </div>
+            </div>
+        </button>
+        <button class="chrome harassment">
+            <div class="chrome_button">
+                <div class="chrome_button_left">
+                </div>
+                騷擾
+                <div class="chrome_button_right">
+                </div>
+            </div>
+        </button>
+        <button class="chrome dismiss">
+            <div class="chrome_button">
+                <div class="chrome_button_left">
+                </div>
+                不用，謝謝！
+                <div class="chrome_button_right">
+                </div>
+            </div>
+        </button>
+    </div>
+    <div id="tab_switching" class="tab_switching inactive">
+        <div class="tab_blogs count_2">
+            <div class="tab_blog item tab_dashboard">
+                <div class="blog_icon dashboard">
+                    <i class="blog_icon_resting">
+                        <img class="blog_icon_img" src="">
+                    </i>
+                    <i class="blog_icon_active">
+                        <img class="blog_icon_img" src="">
+                    </i>
+                </div>
+                <a class="blog_name" href="./Tumblr_files/Tumblr.htm">
+                    <span class="blog_name_span">
+                        情報中心
+                    </span>
+                </a>
+                <div class="tab_notice">
+                    <div class="tab_notice_value">
+                    </div>
+                </div>
+            </div>
+            <div class="tab_blog item" id="tab_blog_princewangwangwang">
+                <div class="blog_icon ">
+                    <i class="blog_icon_overlay">
+                    </i>
+                </div>
+                <a class="blog_name" href="https://www.tumblr.com/blog/princewangwangwang">
+                    <span class="blog_name_span">
+                        prince
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="post-forms-glass" style="opacity: 0; display: none;">
+    </div>
+    <div class="post-forms-modal" style="opacity: 0; display: none;">
+        <div class="v-center-outer">
+            <div class="v-center-inner">
+                <div class="v-center-content">
+                    <div class="post-form-modal-content post-forms-above-glass" data-subview="content">
+                        <div class="post-forms-loader" data-subview="loader">
+                            <div class="Knight-Rider-loader ">
+                                <div class="Knight-Rider-bar">
+                                </div>
+                                <div class="Knight-Rider-bar">
+                                </div>
+                                <div class="Knight-Rider-bar">
+                                </div>
+                            </div>
+                        </div>
+                        <div data-subview="postForm">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="elevator-wrapper">
+        <div class="elevator">
+        </div>
+    </div>
+<!--图标闪出个人信息-->
+<div id="personalShow" class="popover popover_gradient tumblelog_popover avatar_hover down nipple_on_top right "  style=" display:block">
+   <div class="popover_content_wrapper">
+    <div class="popover_inner">
+     <div class="poptica_header">
+      <div class="indash_header_wrapper  has_info tumblelog_name_clublifebytiesto" style="background-color:#FAFAFA; color:#444444" >
+       <div class="navigation">
+        <div class="navigation_bg" style="background-color: #FAFAFA"></div>
+        <div class="navigation_inner" >
+         <h3><a href="http://clublifebytiesto.tumblr.com" target="_blank" class="blog_name" data-peepr="{&quot;tumblelog&quot;:&quot;clublifebytiesto&quot;}"><span class="name">clublifebytiesto</span><span class="full_url">clublifebytiesto.com</span></a></h3>
+         <div class="header_controls">
+          <a class="info_popover_button nav_icon user_dropdown_lockup"><i class="user_dropdown_icon user_dropdown_icon_user icon_user_settings"></i></a>
+          <button class="chrome unfollow" type="button">取消追蹤</button>
+          <button class="chrome follow" type="button" style="display:none;">追蹤</button>
+         </div>
+        </div>
+       </div>
+       <div class="header_image_wrapper has_avatar">
+        <div class="header_image" style="background-image:url(https://secure.static.tumblr.com/ad3f5abebeaf66c9b4f2c42584d94f6e/koxbbyn/zXWnad873/tumblr_static_tumblr_static_84mrbr03bw0s4co0448w8gsok_640.jpg)">
+         <a href="http://clublifebytiesto.tumblr.com" target="_blank"><img src="" /></a>
+        </div>
+       </div>
+       <div  class="avatar square" style="background-color:#FAFAFA; color:#FAFAFA;">
+        <a id="smallAvater" href="http://clublifebytiesto.tumblr.com" target="_blank"><img  src="" alt="ClubLife" /></a>
+       </div>
+       <div class="info_wrapper">
+        <div class="info">
+         <h1 class="title" style="font-family: sans-serif; font-weight:bold;">ClubLife</h1>
+        </div>
+       </div>
+      </div>
+      <div class="info_popover popover popover_gradient" style="display: none;">
+       <div class="popover_inner">
+        <ul class="popover_options">
+         <li class="ask_menu_item"><a href="http://clublifebytiesto.tumblr.com/ask">問問題</a></li>
+         <li class="fan_mail_menu_item"><a href="/send/clublifebytiesto">寄送粉絲郵件</a></li>
+         <li class="archive_menu_item"><a href="http://clublifebytiesto.tumblr.com/archive" target="_blank">封存</a></li>
+         <li><a href="https://www.tumblr.com/liked/by/clublifebytiesto" target="_blank">喜歡</a></li>
+         <li class="flag_menu_item"><a href="#">標示這個部落格</a></li>
+        </ul>
+       </div>
+      </div>
+     </div>
+     <div class="recent_posts has_3_posts is_cached" style="background-color: rgb(250, 250, 250);">
+      <div class="post post_micro is_photo post_tumblelog_8608986d3a26e7545a94b6737148ecf8 not_mine is_reblog with_permalink no_source generic_source no_body" id="post_micro_119673814722" >
+       <div class="post_content">
+        <div class="post_content_inner">
+         <div class="post_thumbnail_container"> 
+         </div>
+        </div>
+       </div>
+       <div class="post_glass post_micro_glass" title="">
+        <a target="_blank" class="hover" title="" href="http://clublifebytiesto.tumblr.com/post/119673814722"></a>
+       </div> 
+      </div>
+      <div class="post post_micro is_photo post_tumblelog_8608986d3a26e7545a94b6737148ecf8 not_mine is_reblog with_permalink no_source generic_source no_body" id="post_micro_119665474948" >
+       <div class="post_content">
+        <div class="post_content_inner">
+         <div class="post_thumbnail_container" > 
+         </div>
+        </div>
+       </div>
+       <div class="post_glass post_micro_glass" title="">
+        <a target="_blank" class="hover" title="" href="http://clublifebytiesto.tumblr.com/post/119665474948"></a>
+       </div> 
+      </div>
+      <div class="post post_micro is_photo post_tumblelog_8608986d3a26e7545a94b6737148ecf8 not_mine is_reblog with_permalink no_source generic_source" id="post_micro_119638421162" >
+       <div class="post_content">
+        <div class="post_content_inner">
+         <div class="post_thumbnail_container" > 
+         </div>
+        </div>
+       </div>
+       <div class="post_glass post_micro_glass" title="">
+        <a target="_blank" class="hover" title="" href="http://clublifebytiesto.tumblr.com/post/119638421162/hypebeast-house-of-hackney-x-puma-basket-rose"></a>
+       </div> 
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+
+
+<!--cdx-->
+  <div id="cdx">
+  </div>
+
+
+
+
+<div id="tumblr_lightbox" class="hidden" style="position: fixed; top: 0px; bottom: 0px; left: 0px; right: 0px; z-index: 4294967294; overflow: hidden; background-color: rgba(17, 17, 17, 0.921569);">
+    <img id="vignette" 
+    style="position: absolute; width: 100%; height: 100%; left: 0px; top: 0px; display: inline-block;">
+    <div style="position: absolute; width: 100%; height: 100%; left: 0px; top: 0px;">
+    </div>
+    <div style="position: absolute; left: 50%; top: 50%;">
+        <a id="tumblr_lightbox_right_link" href="#" style="cursor: default;">
+            <img id="tumblr_lightbox_right_image" src=""
+            style="border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; -webkit-box-shadow: rgb(0, 0, 0) 0px 4px 30px; box-shadow: rgb(0, 0, 0) 0px 4px 30px; border-width: 0px; position: absolute; display: none;">
+        </a>
+        <a id="tumblr_lightbox_center_link" href="#" style="cursor: default;">
+            <img id="tumblr_lightbox_center_image" src=""
+
+            style="border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; -webkit-box-shadow: rgb(0, 0, 0) 0px 4px 30px; box-shadow: rgb(0, 0, 0) 0px 4px 30px; border-width: 0px; position: absolute; z-index: 4294967295; display: inline-block; width: 356.63309352517985px; height: 275.4px; left: -178px; top: -137.5px; background-color: transparent;">
+        </a>
+        <a id="tumblr_lightbox_left_link" href="#" style="cursor: default;">
+            <img id="tumblr_lightbox_left_image" src=""
+            style="border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; -webkit-box-shadow: rgb(0, 0, 0) 0px 4px 30px; box-shadow: rgb(0, 0, 0) 0px 4px 30px; border-width: 0px; position: absolute; display: none;">
+        </a>
+        <div id="tumblr_lightbox_caption" style="position: absolute; text-align: center; font-weight: bold; font-style: normal; font-variant: normal; font-size: 17px; line-height: normal; font-family: HelveticaNeue, Helvetica, Arial, sans-serif; color: rgb(255, 255, 255); padding-top: 20px; text-shadow: rgb(0, 0, 0) 0px 4px 30px; display: none; text-rendering: optimizelegibility;">
+        </div>
+    </div>
+</div>
+
+<!--部落格 hover 出现的popovar-->
+<script type="text/javascript" src="/js/jquery-1.11.0.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
+<script type="text/javascript" src="http://g.alicdn.com/sj/dpl/1.5.1/js/sui.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+// window.onload = function() {
+//     var socket = io();
+// };
+</script>
+<script type="text/javascript" src="/js/ftcp.js"></script>
+</body>
+</html>
+

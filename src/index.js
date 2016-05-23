@@ -1,3 +1,8 @@
+// function add(x, y) {
+//   return x + y;
+// }
+
+// module.exports = add;
 window.render = function() {
   var ctn = document.createElement('div');
   ctn.setAttribute('id', 'tmall');

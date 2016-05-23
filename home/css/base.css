@@ -1,0 +1,206 @@
+* {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+/*CSS3里面加入了一个“-webkit-font-smoothing”属性。这个属性可以使页面上的字体抗锯齿,使用后字体看起来会更清晰舒服。加上之后就顿时感觉页面小清晰了。*/
+*, *:active, *:focus {
+outline: 0;
+outline-style: none;
+outline-width: 0;
+-moz-outline-width: 0;
+/*浏览器默认设置0，位于padding,border外部,margin内部*/
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+/*于设定元素在移动设备（如Adnroid、iOS）上被触发点击事件时，响应的背景框的颜色。*/
+}
+html, body {
+margin: 0;
+padding: 0;
+border: 0;
+font: inherit;
+vertical-align: baseline;
+font-family: "Helvetica Neue","HelveticaNeue",Helvetica,Arial,sans-serif;
+font-weight: 400;
+line-height: 1.4;
+font-size: 14px;
+font-style: normal;
+color: #444;
+text-decoration: none;
+}
+.identity {
+background: #36465d;
+}
+ol, ul {
+list-style: none;
+}
+button, input, select, textarea, a {
+-webkit-tap-highlight-color: rgba(26,26,26,.300781);
+}
+h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset {
+margin: 0;
+padding: 0;
+border: 0;
+vertical-align: baseline;
+}
+a {
+color: #444;
+text-decoration: none;
+}
+/*
+在谷歌浏览器中如果在a:hover{}里面加入display:block之后。。效果无法出现，而在其它浏览器中一切正常的解决方法是再增加一个专门针对谷歌浏览器的样式： 
+a:webkit-any-link{display:block;}
+*/
+iframe[Attributes Style] {/*选择attr带style属性所有元素。*/
+height: 1px;
+width: 1px;
+border-top-width: 0px;
+border-right-width: 0px;
+border-bottom-width: 0px;
+border-left-width: 0px;
+}
+h1, h1 a {
+color: #3f3f3f;
+}
+h1 {
+font-weight: 700;
+font-size: 35px;
+line-height: 24px;
+}
+/*h1 {
+font-size: 2em;
+font-weight: bold;
+}*/
+
+input, textarea {
+font-family: "Helvetica Neue","HelveticaNeue",Helvetica,Arial,sans-serif;
+font-weight: 400;
+line-height: 1.4;
+font-size: 13px;
+font-style: normal;
+/*margin: 0;
+*/background-color: #fff;
+color: #222;
+border: 1px solid #d5d9dd;
+border-radius: 2px;
+box-sizing: border-box;
+}
+input:not([type]), input[type="color"], input[type="email"], input[type="number"], input[type="password"], input[type="tel"], input[type="url"], input[type="text"] {
+padding: 1px 0px;
+}
+input, input[type="password"], input[type="search"], isindex {
+-webkit-appearance: textfield;
+padding: 1px;
+background-color: white;
+border: 2px inset;
+border-image-source: initial;/*指的什么*/
+border-image-slice: initial;
+border-image-width: initial;
+border-image-outset: initial;
+border-image-repeat: initial;
+-webkit-rtl-ordering: logical;
+-webkit-user-select: text;
+cursor: auto;
+}
+input, textarea, keygen, select, button, isindex {
+margin: 0em;
+font: -webkit-small-control;
+color: initial;
+letter-spacing: normal;
+word-spacing: normal;
+text-transform: none;
+text-indent: 0px;
+text-shadow: none;
+display: inline-block;
+text-align: start;
+}
+input, textarea, keygen, select, button, isindex, meter, progress {
+-webkit-writing-mode: horizontal-tb;
+/*-webkit-writing-mode: horizontal-tb | vertical-rl | vertical-lr 取值 horizontal-tb 默认值。水平方向从左向右、垂直方向自上而下的书写方式*/
+}
+button, input, select, textarea, a {
+-webkit-tap-highlight-color: rgba(26,26,26,.300781);
+}
+button {
+font-family: "Helvetica Neue","HelveticaNeue",Helvetica,Arial,sans-serif;
+font-weight: 400;
+line-height: 1.4;
+/*
+当line-height：150%时，子元素会继承父元素的line-height；
+当line-height：1.5时，子元素的line-height＝自身字号x1.5；
+*/
+font-size: 14px;
+font-style: normal;
+}
+form {
+vertical-align: baseline;
+display: inline;
+}
+a img {
+border-width: 0;
+}
+h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset，form {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+
+
+
+
+
+
+.popover {
+cursor: default;
+position: absolute;
+font: 14px/1.4 "Helvetica Neue","HelveticaNeue",Helvetica,Arial,sans-serif;
+border-radius: 3px;
+box-shadow: 0 5px 10px 0 rgba(0,0,0,.1);
+background: rgba(0,0,0,.1);
+}
+
+[data-icon]:before, .icon_activity:before, .icon_analytics:before, .icon_android:before, .icon_apple:before, .icon_arrow_carrot_down:before, .icon_arrow_carrot_left:before, .icon_arrow_carrot_right:before, .icon_arrow_carrot_thin_left:before, .icon_arrow_carrot_thin_right:before, .icon_arrow_carrot_up:before, .icon_arrow_filled_down:before, .icon_arrow_filled_left:before, .icon_arrow_filled_right:before, .icon_arrow_filled_up:before, .icon_arrow_small_right:before, .icon_arrow_thin_down:before, .icon_arrow_thin_left:before, .icon_arrow_thin_right:before, .icon_arrow_thin_up:before, .icon_arrow_video:before, .icon_arrow_video_12:before, .icon_blog_icon:before, .icon_cc:before, .icon_checkmark:before, .icon_close:before, .icon_close_video_12:before, .icon_customize:before, .icon_desktop:before, .icon_diamond:before, .icon_drafts:before, .icon_drag:before, .icon_edit:before, .icon_edit_pencil:before, .icon_editor_bold:before, .icon_editor_camera:before, .icon_editor_carets:before, .icon_editor_crossout:before, .icon_editor_headline:before, .icon_editor_hr:before, .icon_editor_italic:before, .icon_editor_link:before, .icon_editor_markdown:before, .icon_editor_more:before, .icon_editor_ol:before, .icon_editor_plus:before, .icon_editor_quote:before, .icon_editor_readmore:before, .icon_editor_ul:before, .icon_elevator:before, .icon_embed:before, .icon_explore:before, .icon_explore_inner:before, .icon_explore_outer:before, .icon_explore_tumblr:before, .icon_export:before, .icon_filter:before, .icon_flag:before, .icon_follow_rounded_small:before, .icon_followers:before, .icon_following:before, .icon_fullscreen:before, .icon_globe:before, .icon_grip_dots:before, .icon_grip_vertical:before, .icon_hd:before, .icon_help:before, .icon_home:before, .icon_keyboard:before, .icon_like:before, .icon_lock:before, .icon_lock_12:before, .icon_lock_thick_12:before, .icon_logout:before, .icon_mail:before, .icon_mail_new:before, .icon_manburger:before, .icon_members:before, .icon_members_12:before, .icon_mention:before, .icon_money_bubble:before, .icon_nav_settings:before, .icon_pause:before, .icon_person:before, .icon_person_plus:before, .icon_photo_plus:before, .icon_photoset:before, .icon_play:before, .icon_plus:before, .icon_post_audio:before, .icon_post_audio_small:before, .icon_post_chat:before, .icon_post_chat_inverse:before, .icon_post_chat_small:before, .icon_post_icon:before, .icon_post_link:before, .icon_post_link_inverse:before, .icon_post_link_small:before, .icon_post_photo:before, .icon_post_photo_small:before, .icon_post_quote:before, .icon_post_quote_small:before, .icon_post_text:before, .icon_post_text_small:before, .icon_post_video:before, .icon_post_video_small:before, .icon_postforms_add_photo:before, .icon_postforms_audio:before, .icon_postforms_camera:before, .icon_postforms_caption:before, .icon_postforms_clickthrough:before, .icon_postforms_flash_off:before, .icon_postforms_flash_on:before, .icon_postforms_gif:before, .icon_postforms_globe:before, .icon_postforms_globe_small:before, .icon_postforms_photo:before, .icon_postforms_processing:before, .icon_postforms_refresh:before, .icon_postforms_selfie:before, .icon_postforms_selfie_wink:before, .icon_postforms_video:before, .icon_posts:before, .icon_processing:before, .icon_queue:before, .icon_queue_small:before, .icon_reblog:before, .icon_refresh:before, .icon_remove:before, .icon_reply:before, .icon_reply_outline:before, .icon_reposition:before, .icon_search:before, .icon_settings:before, .icon_sound_off:before, .icon_sound_on:before, .icon_speaker:before, .icon_speaker_cross:before, .icon_speaker_waves:before, .icon_star:before, .icon_star_12:before, .icon_trash:before, .icon_trending_arrow:before, .icon_twitter:before, .icon_user_settings:before, .icon_video_unsupported:before, .icon_view_grid:before, .icon_view_grid_settings:before, .icon_view_list:before, .icon_windows:before {
+font-family: "tumblr-icons","Blank";
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+font-style: normal;
+font-variant: normal;
+font-weight: normal;
+text-decoration: none;
+text-transform: none;
+}
+
+
+
+
+[data-icon]:before, .icon_activity:before, .icon_analytics:before, .icon_android:before, .icon_apple:before, .icon_arrow_carrot_down:before, .icon_arrow_carrot_left:before, .icon_arrow_carrot_right:before, .icon_arrow_carrot_thin_left:before, .icon_arrow_carrot_thin_right:before, .icon_arrow_carrot_up:before, .icon_arrow_filled_down:before, .icon_arrow_filled_left:before, .icon_arrow_filled_right:before, .icon_arrow_filled_up:before, .icon_arrow_small_right:before, .icon_arrow_thin_down:before, .icon_arrow_thin_left:before, .icon_arrow_thin_right:before, .icon_arrow_thin_up:before, .icon_arrow_video:before, .icon_arrow_video_12:before, .icon_blog_icon:before, .icon_cc:before, .icon_checkmark:before, .icon_close:before, .icon_close_video_12:before, .icon_customize:before, .icon_desktop:before, .icon_diamond:before, .icon_drafts:before, .icon_drag:before, .icon_edit:before, .icon_edit_pencil:before, .icon_editor_bold:before, .icon_editor_camera:before, .icon_editor_carets:before, .icon_editor_crossout:before, .icon_editor_headline:before, .icon_editor_hr:before, .icon_editor_italic:before, .icon_editor_link:before, .icon_editor_markdown:before, .icon_editor_more:before, .icon_editor_ol:before, .icon_editor_plus:before, .icon_editor_quote:before, .icon_editor_readmore:before, .icon_editor_ul:before, .icon_elevator:before, .icon_embed:before, .icon_explore:before, .icon_explore_inner:before, .icon_explore_outer:before, .icon_explore_tumblr:before, .icon_export:before, .icon_filter:before, .icon_flag:before, .icon_follow_rounded_small:before, .icon_followers:before, .icon_following:before, .icon_fullscreen:before, .icon_globe:before, .icon_grip_dots:before, .icon_grip_vertical:before, .icon_hd:before, .icon_help:before, .icon_home:before, .icon_keyboard:before, .icon_like:before, .icon_lock:before, .icon_lock_12:before, .icon_lock_thick_12:before, .icon_logout:before, .icon_mail:before, .icon_mail_new:before, .icon_manburger:before, .icon_members:before, .icon_members_12:before, .icon_mention:before, .icon_money_bubble:before, .icon_nav_settings:before, .icon_pause:before, .icon_person:before, .icon_person_plus:before, .icon_photo_plus:before, .icon_photoset:before, .icon_play:before, .icon_plus:before, .icon_post_audio:before, .icon_post_audio_small:before, .icon_post_chat:before, .icon_post_chat_inverse:before, .icon_post_chat_small:before, .icon_post_icon:before, .icon_post_link:before, .icon_post_link_inverse:before, .icon_post_link_small:before, .icon_post_photo:before, .icon_post_photo_small:before, .icon_post_quote:before, .icon_post_quote_small:before, .icon_post_text:before, .icon_post_text_small:before, .icon_post_video:before, .icon_post_video_small:before, .icon_postforms_add_photo:before, .icon_postforms_audio:before, .icon_postforms_camera:before, .icon_postforms_caption:before, .icon_postforms_clickthrough:before, .icon_postforms_flash_off:before, .icon_postforms_flash_on:before, .icon_postforms_gif:before, .icon_postforms_globe:before, .icon_postforms_globe_small:before, .icon_postforms_photo:before, .icon_postforms_processing:before, .icon_postforms_refresh:before, .icon_postforms_selfie:before, .icon_postforms_selfie_wink:before, .icon_postforms_video:before, .icon_posts:before, .icon_processing:before, .icon_queue:before, .icon_queue_small:before, .icon_reblog:before, .icon_refresh:before, .icon_remove:before, .icon_reply:before, .icon_reply_outline:before, .icon_reposition:before, .icon_search:before, .icon_settings:before, .icon_sound_off:before, .icon_sound_on:before, .icon_speaker:before, .icon_speaker_cross:before, .icon_speaker_waves:before, .icon_star:before, .icon_star_12:before, .icon_trash:before, .icon_trending_arrow:before, .icon_twitter:before, .icon_user_settings:before, .icon_video_unsupported:before, .icon_view_grid:before, .icon_view_grid_settings:before, .icon_view_list:before, .icon_windows:before {
+display: inline-block;
+font-family: "tumblr-icons";
+font-style: normal;
+font-weight: 400;
+font-variant: normal;
+line-height: 1;
+text-decoration: inherit;
+text-rendering: optimizeLegibility;
+text-transform: none;
+-moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
+font-smoothing: antialiased;
+}
+a img {
+border-width: 0;
+}
+
+
+
+
+
+/*************************************************/
+.no-height{
+height:0;
+padding:0;
+margin:0;
+border:0;
+font-size:0;
+}

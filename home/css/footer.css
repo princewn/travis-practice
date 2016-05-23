@@ -1,0 +1,272 @@
+@charset "utf-8";
+/* CSS Document */
+.pinned_sidebar_footer {
+-webkit-transform: translateZ(0);
+-moz-transform: translateZ(0);
+-ms-transform: translateZ(0);
+-o-transform: translateZ(0);
+transform: translateZ(0);
+margin-left: -450px;
+position: fixed;
+width: 900px;
+bottom: 0;
+left: 50%;
+}
+.pinned_sidebar_footer .sidebar_nav.visible {
+-webkit-transform: translateY(0)translateZ(0);
+-moz-transform: translateY(0)translateZ(0);
+-ms-transform: translateY(0)translateZ(0);
+-o-transform: translateY(0)translateZ(0);
+transform: translateY(0)translateZ(0);
+opacity: 1;
+}
+.pinned_sidebar_footer .sidebar_nav {
+-webkit-transition: opacity 150ms ease-out,-webkit-transform 150ms ease-out;
+-moz-transition: opacity 150ms ease-out,-moz-transform 150ms ease-out;
+transition: opacity 150ms ease-out,transform 150ms ease-out;
+-webkit-transform: translateY(15px)translateZ(0);
+-moz-transform: translateY(15px)translateZ(0);
+-ms-transform: translateY(15px)translateZ(0);
+-o-transform: translateY(15px)translateZ(0);
+transform: translateY(15px)translateZ(0);
+opacity: 0;
+}
+.sidebar_nav {
+margin: 15px 11px 10px;
+list-style: none;
+color: #7C95AC;
+color: rgba(255,255,255,.8);
+float: right;
+width: 215px;
+padding: 0;
+}
+.pinned_sidebar_footer .sidebar_nav.visible {
+-webkit-transform: translateY(0)translateZ(0);
+-moz-transform: translateY(0)translateZ(0);
+-ms-transform: translateY(0)translateZ(0);
+-o-transform: translateY(0)translateZ(0);
+transform: translateY(0)translateZ(0);
+opacity: 1;
+}
+
+.sidebar_nav .sidebar_nav_item {
+text-align: center;
+margin: 0 7px 0 0;
+float: left;
+padding: 0;
+}
+.sidebar_link {
+text-decoration: none;
+line-height: 26px;
+font-size: 12px;
+display: block;
+color: rgba(255,255,255,.5);!important
+margin: 0 3px;
+}
+#popover_legal .popover {
+display: none;
+min-width: 116px;
+bottom: 28px;
+left: 50%;
+margin-left: -58px;
+}
+.popover_gradient {
+padding: 1px;
+}
+.popover_button.popover_active, .popover {
+z-index: 2147483646;
+}
+.popover_gradient {
+padding: 1px;
+}
+.popover_gradient>.popover_inner:last-child {
+-webkit-border-bottom-right-radius: 3px;
+-webkit-border-bottom-left-radius: 3px;
+-moz-border-bottom-right-radius: 3px;
+-moz-border-bottom-left-radius: 3px;
+border-bottom-right-radius: 3px;
+border-bottom-left-radius: 3px;
+}
+.popover_gradient>.popover_inner, .popover.search_popover>.popover_inner{
+padding: 0 0 4px;
+background: #fff;
+}
+.popover_gradient>.popover_inner:last-child, .popover_gradient.popover_blogs>.popover_inner:last-child {
+border-bottom-right-radius: 3px;
+border-bottom-left-radius: 3px;
+border-top-right-radius: 3px;
+border-top-left-radius: 3px;
+border-radius: 3px;
+}
+.popover_gradient>.popover_inner:first-child {
+border-top-right-radius: 3px;
+border-top-left-radius: 3px;
+}
+.popover_gradient>.popover_inner {
+padding: 4px 0;
+background: #fff;
+}
+.popover_menu>.popover_inner {
+padding: 0;
+}
+.popover_gradient>.popover_inner {
+background: #f3f3f3;
+box-shadow: inset 0 1px 0 rgba(255,255,255,.75);
+}
+
+
+
+
+
+
+
+
+
+.toast_float {
+position: fixed;
+bottom: 0;
+left: 50%;
+margin-left: -450px;
+width: 900px;
+opacity: .999;
+height: 0;
+-webkit-transform: translateZ(0);
+-moz-transform: translateZ(0);
+-ms-transform: translateZ(0);
+-o-transform: translateZ(0);
+transform: translateZ(0);
+z-index: 78;
+}
+.Knight-Rider-loader {
+line-height: 0;
+}
+
+.Knight-Rider-bar:nth-child(1) {
+-webkit-animation-delay: -200ms;
+animation-delay: -200ms;
+}
+.Knight-Rider-bar {
+display: none;
+height: 20px;
+width: 20px;
+margin: 0 3px;
+opacity: .5;
+border-radius: 5px;
+background-color: #d9d9d9;
+}
+@media (max-width: 960px)
+.elevator-wrapper {
+display: none!important;
+}
+.elevator-wrapper {
+-webkit-transform: translateZ(0);
+-moz-transform: translateZ(0);
+-ms-transform: translateZ(0);
+-o-transform: translateZ(0);
+transform: translateZ(0);
+position: fixed;
+bottom: 15px;
+right: 15px;
+}
+.elevator-wrapper.visible .elevator {
+-webkit-transform: translateY(0)translateZ(0);
+-moz-transform: translateY(0)translateZ(0);
+-ms-transform: translateY(0)translateZ(0);
+-o-transform: translateY(0)translateZ(0);
+transform: translateY(0)translateZ(0);
+pointer-events: all;
+opacity: 1;
+}
+.visiable{
+opacity:1;
+}
+.elevator {
+-webkit-transition: opacity 150ms ease-out,-webkit-transform 150ms ease-out;
+-moz-transition: opacity 150ms ease-out,-moz-transform 150ms ease-out;
+transition: opacity 150ms ease-out,transform 150ms ease-out;
+color: rgba(255,255,255,.5);
+pointer-events: none;
+text-align: center;
+line-height: 32px;
+cursor: pointer;
+font-size: 24px;
+display: block;
+height: 24px;
+width: 25px;
+-webkit-transform: translateY(15px)translateZ(0);
+-moz-transform: translateY(15px)translateZ(0);
+-ms-transform: translateY(15px)translateZ(0);
+-o-transform: translateY(15px)translateZ(0);
+transform: translateY(15px)translateZ(0);
+opacity:0;
+}
+.elevator:before {
+content: "\f18f";
+}
+.elevator:before {
+font-family: "tumblr-icons","Blank";
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+font-style: normal;
+font-variant: normal;
+font-weight: 400;
+text-decoration: none;
+text-transform: none;
+}
+.toast_float {
+position: fixed;
+bottom: 0;
+left: 50%;
+margin-left: -450px;
+width: 900px;
+opacity: .999;
+height: 0;
+-webkit-transform: translateZ(0);
+-moz-transform: translateZ(0);
+-ms-transform: translateZ(0);
+-o-transform: translateZ(0);
+transform: translateZ(0);
+z-index: 78;
+}
+
+#toast_container {
+position: relative;
+float: right;
+width: 300px;
+height: 0;
+}
+
+#toast_position {
+position: absolute;
+bottom: 18px;
+right: 17px;
+}
+
+#toaster {
+display: block;
+position: relative;
+-webkit-transform: translate3d(0,0,0);
+width: 215px;
+color: #999da2;
+color: rgba(255,255,255,0.5);
+font-family: "Helvetica Neue",Helvetica,"Lucida Grande",Arial,sans-serif;
+font-size: 12px;
+line-height: 14px;
+font-weight: normal;
+text-rendering: optimizeLegibility;
+font-smooth: always;
+-webkit-background-clip: padding-box;
+-moz-background-clip: padding;
+background-clip: padding-box;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+#toaster, .toast, .toast_border, .toast_outer, .toast_inner {
+display: block;
+margin: 0;
+padding: 0;
+}
+#toaster, .toast {
+list-style: none;
+}

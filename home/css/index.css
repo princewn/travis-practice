@@ -1,0 +1,187 @@
+user agent stylesheeta:-webkit-any-link {/*user agent stylesheet是浏览器的一些默认样式*/
+color: -webkit-link;
+text-decoration: underline;
+cursor: auto;
+}
+
+/*
+默认是蓝色的
+sidebar_link无法覆盖
+a:-webkit-any-link {
+color: -webkit-link;
+cursor: auto;
+}*/
+html|* > svg {
+-webkit-transform-origin-x: 50%;
+-webkit-transform-origin-y: 50%;
+-webkit-transform-origin-z: initial;
+}
+svg:not(:root), symbol, image, marker, pattern, foreignObject {
+overflow: hidden;
+}
+.clearfix {
+zoom: 1;
+}
+.clearfix:after, .clearfix:before {
+content: "\0020";
+display: block;
+height: 0;
+visibility: hidden;
+position: relative;
+z-index: -1;
+}
+.clearfix:after {
+clear: both;
+}
+.hidden {
+display: none!important;
+visibility: hidden!important;
+}
+.post:not(.new_post_buttons) * {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+.post {
+position: relative;
+font-size: 14px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+/*总体栏*/
+.site-notification+.l-header-container+.l-container {
+padding-top: 70px;
+}
+.l-container {
+width: 900px;
+margin: auto;
+padding: 92px 30px 0;
+.l-container {
+-webkit-transition: -webkit-transform .1s ease;
+-moz-transition: -moz-transform .1s ease;
+transition: transform .1s ease;
+}
+.l-container.l-container--two-column .l-content, .l-container.l-container--two-column-dashboard .l-content {
+background-color: #36465d;
+}
+.l-container .l-content {
+padding: 0 8px;
+border-radius: 15px;
+}
+/*post的标签设置*/
+.post_full.is_reblog.no_source .post_info_fence>a {
+max-width: 300px;
+}
+.post_full .post_header, .post_full .post_header .post_info .post_info_link {
+color: #a1a1a1;
+word-wrap: normal;
+white-space: nowrap;
+}
+.post .post_header .post_info_link:hover {
+color: #969696;
+}
+.post_full.is_reblog .post_info_fence>a {
+display: inline-block;
+text-overflow: ellipsis;
+overflow: hidden;
+vertical-align: bottom;
+max-width: 150px;
+}
+.post .post_header .post_info_link {
+color: #a1a1a1;
+text-decoration: none;
+background-image: none;
+padding-bottom: 0;
+}
+.post:not(.new_post_buttons) * {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+a {
+color: #444;
+text-decoration: none;
+}
+/*追踪蓝色到白色*/
+.reblog_follow_button.active i, .reblog_follow_button:hover i, .reblog_follow_button.onboard i {
+-webkit-transition-duration: 200ms;/*z这是在CSS里面的写法*/
+-moz-transition-duration: 200ms;
+transition-duration: 200ms;
+background-color: #a1a1a1;
+max-width: 200px;
+padding: 0 3px;
+text-indent: 0;
+}
+
+.reblog_follow_button i {
+position: absolute;
+font-style: normal;
+font-weight: 700;
+text-indent: -999em;
+border-radius: 2px;
+line-height: 12px;
+max-width: 14px;
+height: 12px;
+top: -1px;
+bottom: 0;
+left: 0;
+-webkit-transition-property: max-width;
+-moz-transition-property: max-width;
+transition-property: max-width;
+-webkit-transition-duration: 0;
+-moz-transition-duration: 0;
+transition-duration: 0;
+-webkit-transition-timing-function: ease;
+-moz-transition-timing-function: ease;
+transition-timing-function: ease;
+}
+.reblog_follow_button:not(.icon_follow_rounded_small)::before {
+background: #a1a1a1 url('/images/dashboard_master_sprite.png?v=cab1c7cbf936a1197c3521dd488703ff') -400px -39px no-repeat;
+content: '';
+}
+.reblog_follow_button:before {
+border-radius: 2px;
+position: absolute;
+margin-top: -7px;
+height: 12px;
+width: 12px;
+right: auto;
+bottom: 0;
+left: 0;
+top: 50%;
+}
+.post_full .post_header .post_info .reblog_follow_button {
+color: #fff;
+}
+.reblog_follow_button {
+text-transform: uppercase;
+white-space: nowrap;
+text-align: center;
+color: #fff;
+line-height: 12px;
+font-size: 8px;
+}
+
+/***************************************************************/
+#contentWithoutDataJasonwn{
+}
+
+.tumblr_lightbox{
+position: fixed; 
+top: 0px; 
+bottom: 0px; 
+left: 0px; 
+right: 0px; 
+z-index: 4294967294; 
+overflow: hidden; 
+background-color: rgba(17, 17, 17, 0.921569); 
+opcity:1;
+
+}
+.be_avatar_fixed{
+				position:fixed !important;
+				top:54px!important;
+				left:-85px!important;
+				z-index:100!important;
+}

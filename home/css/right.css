@@ -1,0 +1,778 @@
+/*右*/
+.l-container.l-container--two-column .right_column, .l-container.l-container--two-column-dashboard .right_column {
+width: 229px;
+}
+.identity .right_column {
+/*-webkit-transition: opacity 200ms;
+-moz-transition: opacity 200ms;
+transition: opacity 200ms;*/
+background: inherit;
+padding-bottom: 20px;
+margin-right: -1px;
+margin-top: -8px;
+position: relative;
+width: 229px;
+float: right;
+color: #fff;
+opacity: 1;
+}
+.identity .right_column:after {
+/*background: -webkit-linear-gradient(top,#36465d,rgba(54,70,93,0));
+background: linear-gradient(to bottom,#36465d,rgba(54,70,93,0));*/
+pointer-events: none;
+position: absolute;
+height: 35px;
+top: 100%;
+right: 0;
+left: 0;
+content: ' ';
+}
+/*flow button*/
+.identity .right_column>.controls_section:first-child {
+margin: -3px 0 0;
+}
+.identity .controls_section.follow_list.recommended_tumblelogs, .identity .controls_section.follow_list.trending_tumblelogs {
+padding-right: 40px;
+overflow: hidden;
+width: 100%;
+}
+.identity .controls_section.follow_list {
+/*-webkit-transition: opacity linear .1s;
+-moz-transition: opacity linear .1s;
+transition: opacity linear .1s;*/
+min-height: 243px;
+opacity: 1;
+}
+.identity .controls_section {
+list-style-type: none;
+margin: 18px 0 0;
+clear: both;
+padding: 0;
+}
+
+.identity .controls_section li.account_header, .identity .controls_section li.editors_header, .identity .controls_section li.contributors_header, .identity .controls_section li.section_header {
+color: rgba(255,255,255,.3);
+line-height: 25px;
+font-weight: 700;
+padding: 0 10px;
+font-size: 12px;
+}
+.identity .controls_section li {
+border-top: 1px solid rgba(255,255,255,.08);
+position: relative;
+padding: 0;
+}
+/*li item*/
+.identity .controls_section.follow_list.recommended_tumblelogs>li.item {
+border-bottom: 1px solid rgba(255,255,255,.08);
+border-top: 0;
+}
+.identity .controls_section.follow_list.recommended_tumblelogs>li.item .hover{
+background-color:#529ECC;
+}
+.identity .controls_section.user_list li {
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+/*item里面的内容*/
+.identity .controls_section.user_list li .blog.has_follow_button {
+padding-right: 35px;
+}
+.identity .controls_section.user_list li .blog {
+height: 45px;
+padding: 8px 8px 0 57px;
+}
+.identity .item:hover {
+background-color:rgba(255,255,255,.1);
+}
+.identity .controls_section.user_list li .follow_list_item_blog {
+display: block;
+color: #fff;
+color: rgba(255,255,255,.5);
+line-height: 14px;
+}
+.identity .controls_section.user_list li:hover .follow_list_item_blog:before {
+background-color: rgba(60,75,97,0);
+/*background-image: -webkit-linear-gradient(left,rgba(60,75,97,0),#3c4b61);
+background-image: linear-gradient(to right,rgba(60,75,97,0),#3c4b61);*/
+/*border-right: 5px solid #3c4b61;
+*/
+border-right: 5px solid #3c4b61;
+}
+.identity .controls_section.user_list li:hover .follow_list_item_blog:before {
+background-color: rgba(60,75,97,0);
+/*background-image: -webkit-linear-gradient(left,rgba(60,75,97,0),#3c4b61);
+background-image: linear-gradient(to right,rgba(60,75,97,0),#3c4b61);*/
+border-right: 0px solid rgba(255,255,255,.1);
+}
+.identity .controls_section.user_list li .follow_list_item_blog.has_follow_button:before {
+right: 33px;
+}
+
+.identity .controls_section.user_list li .follow_list_item_blog:before {
+background-color: rgba(54,70,93,0);
+/*background-image: -webkit-linear-gradient(left,rgba(54,70,93,0),#36465d);
+background-image: linear-gradient(to right,rgba(54,70,93,0),#36465d);*/
+border-right: 5px solid #36465d;
+position: absolute;
+display: block;
+width: 20px;
+right: 8px;
+bottom: 0;
+top: 0;
+content: ' ';
+}
+/*hide overflow*/
+.identity .controls_section.user_list li .follow_list_item_blog .hide_overflow, .identity .controls_section.user_list li .follow_list_item_blog .tumblelog_title, .identity .controls_section.user_list li .follow_list_item_blog .tumblelog_name {
+text-overflow: clip;
+max-width: 100%;
+margin-right: 5px;
+}
+
+.identity .controls_section.user_list .hide_overflow {
+padding-top: 1px;
+}
+.hide_overflow {
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+-o-text-overflow: ellipsis;
+-ms-text-overflow: ellipsis;
+}
+
+/*log title*/
+.identity .controls_section.user_list li .follow_list_item_blog .tumblelog_title {
+color: rgba(255,255,255,.5);
+font-weight: 700;
+padding: 1px 0 0;
+line-height: 17px;
+font-size: 14px;
+}
+.identity .controls_section.user_list li .follow_list_item_blog .hide_overflow, .identity .controls_section.user_list li .follow_list_item_blog .tumblelog_title, .identity .controls_section.user_list li .follow_list_item_blog .tumblelog_name {
+text-overflow: clip;
+max-width: 100%;
+margin-right: 5px;
+}
+.identity .controls_section.user_list li .follow_list_item_blog .tumblelog_name {
+color: rgba(255,255,255,.3);
+line-height: 17px;
+font-size: 13px;
+}
+/*avtar*/
+.identity .controls_section.user_list .avatar {
+background-position: 50% 50%;
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 3px;
+position: absolute;
+height: 37px;
+width: 37px;
+left: 10px;
+top: 8px;
+}
+.identity .controls_section.user_list .avatar_img {
+border-radius: 3px;
+display: block;
+height: 37px;
+width: 37px;
+opacity: 0;
+}
+/*class="follow plus-follow-button"*/
+.identity .right_column .follow {
+position: absolute;
+right: 10px;
+top: 14px;
+}
+.plus-follow-button {
+background: rgba(255,255,255,.2);
+text-decoration: none;
+position: relative;
+border-radius: 3px;
+cursor: pointer;
+display: block;
+color: #36465d;
+font-size: 24px;
+height: 25px;
+width: 25px;
+opacity: 1;
+padding: 0;
+line-height: 0;
+}
+.plus-follow-button:hover {
+background:#FFF;
+}
+.plus-follow-button:before, .plus-follow-button .follow_icon {
+position: absolute;
+text-align: center;
+width: 100%;
+line-height: 0;
+margin-top: 7px;
+}
+.plus-follow-button:before:before, .plus-follow-button .follow_icon:before {
+height: 11px;
+}
+
+
+
+/*class="dismiss"*/
+.identity .controls_section.follow_list .dismiss {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+position: absolute;
+text-align: center;
+padding: 0;
+height: 100%;
+width: 20px;
+left: 100%;
+top: 0%;
+}
+.icon_close:before {
+content: "\f113";
+}
+.identity .controls_section .item .icon_close {
+color: rgba(255,255,255,.15);
+-webkit-transform: scale(0);
+-moz-transform: scale(0);
+-ms-transform: scale(0);
+-o-transform: scale(0);
+transform: scale(0);
+text-align: center;
+position: absolute;
+line-height: 20px;
+font-size: 18px;
+display: block;
+height: 20px;
+width: 20px;
+opacity: 0;
+top: 32%;
+}
+
+.icon_plus:before {
+content: "\f137";
+}
+/*lod_title
+.identity .controls_section.user_list li .follow_list_item_blog .tumblelog_title {
+color: rgba(255,255,255,.5);
+font-weight: 700;
+padding: 1px 0 0;
+line-height: 17px;
+font-size: 14px;
+}
+.identity .controls_section.user_list li .follow_list_item_blog .hide_overflow, .identity .controls_section.user_list li .follow_list_item_blog .tumblelog_title, .identity .controls_section.user_list li .follow_list_item_blog .tumblelog_name {
+text-overflow: clip;
+max-width: 100%;
+margin-right: 5px;
+}*/
+/*lod_name
+.identity .controls_section.user_list li .follow_list_item_blog .hide_overflow, .identity .controls_section.user_list li .follow_list_item_blog .tumblelog_title, .identity .controls_section.user_list li .follow_list_item_blog .tumblelog_name {
+text-overflow: clip;
+max-width: 100%;
+margin-right: 5px;
+}
+*/
+
+
+
+
+/*探索整个tumblr  sidebar_link avatar_align*/
+.sidebar_link.avatar_align {
+margin-left: 10px;
+margin-top: 2px;
+}
+.sidebar_link {
+text-decoration: none;
+line-height: 26px;
+font-size: 12px;
+display: block;
+color: rgba(255,255,255,.5);
+margin: 0 3px;
+}
+/*雷达 class="controls_section controls_section_radar"*/
+.identity .controls_section {
+list-style-type: none;
+margin: 18px 0 0;
+clear: both;
+padding: 0;
+}
+.identity .controls_section li:first-child {
+border-top-width: 0!important;
+}
+.identity .controls_section li.section_header {
+border-bottom: 2px solid rgba(255,255,255,.13);
+/*background-color: transparent;
+*/text-transform: uppercase;
+}
+/*雷块 tumblr_radar*/
+#tumblr_radar {
+position: relative;
+background: 0;
+}
+.identity .right_column .radar {
+margin-top: 0;
+padding: 0 10px;
+}
+/*radar_footer has_follow_button*/
+.radar .radar_footer {
+padding: 10px 0 8px;
+}
+.radar .radar_footer .radar_avatar {
+width: 200px;
+}
+.radar .radar_avatar {
+display: block;
+position: relative;
+min-height: 37px;
+color: rgba(255,255,255,0.666);
+text-decoration: none;
+font: bold 14px/1.4 "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.radar .radar_tumblelog_avatar {
+float: left;
+height: 37px;
+width: 37px;
+margin-right: 11px;
+background-position: 0 0;
+background-repeat: no-repeat;
+background-size: 37px 37px;
+border-radius: 3px;
+}
+.radar .radar_avatar img {
+border-radius: 3px;
+}
+.radar .radar_footer .radar_avatar {
+width: 200px;
+}
+.radar .radar_avatar {
+display: block;
+position: relative;
+min-height: 37px;
+color: rgba(255,255,255,0.666);
+text-decoration: none;
+font: bold 14px/1.4 "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.radar .radar_footer .radar_avatar:before {
+content: ' ';
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+width: 20px;
+/*background-image: -webkit-linear-gradient(left,rgba(54,70,93,0),#36465d);
+background-image: linear,to right,rgba(54,70,93,0),#36465d;*/
+}
+.radar .radar_tumblelog_label {
+float: left;
+padding-top: 1px;
+max-width: 137px;
+overflow: hidden;
+}
+
+.radar .radar_tumblelog_label .name {
+max-width: 165px;
+white-space: nowrap;
+padding: 0;
+color: rgba(255,255,255,0.5);
+font-size: 14px;
+line-height: 16px;
+}
+.radar .radar_tumblelog_label .subheading {
+padding-top: 2px;
+float: left;
+color: rgba(255,255,255,0.3);
+font-size: 13px;
+line-height: 17px;
+font-weight: normal;
+white-space: nowrap;
+}
+/*follow plus-follow-button */
+.radar .radar_footer .follow {
+position: absolute;
+right: 10px;
+top: 14px;
+}
+.radar .radar_footer .icon_plus {
+text-align: center;
+opacity: 1;
+}
+/*rader_post*/
+.radar .radar_post {
+border-radius: 3px 3px 0 0;
+background: #fff;
+overflow: hidden;
+border: 0;
+}
+.radar .radar_content {
+position: relative;
+border-radius: 0;
+}
+.radar .radar_content .thumbnail_anchor {
+display: block;
+position: relative;
+text-decoration: none;
+background-size: cover;
+background-position: center center;
+border-radius: 0;
+}
+.radar .radar_content .thumbnail_anchor img {
+display: block;
+opacity: 0;
+}
+.radar .radar_superglass {
+display: block;
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+}
+
+
+.radar .radar_controls {
+display: block;
+overflow: hidden;
+-webkit-user-select: none;
+-moz-user-select: none;
+user-select: none;
+-webkit-background-clip: padding-box;
+width: auto;
+height: 45px;
+padding-left: 15px;
+padding-right: 15px;
+background-color: #fff;
+border-radius: 0 0 3px 3px;
+}
+.radar_controls .note_count>a {
+float: left;
+padding-top: 13px;
+font-weight: bold;
+color: #a1a1a1;
+font-size: 13px;
+}
+#tumblr_radar .notes_outer_container.popover {
+/*background: transparent;
+*/display: none;
+left: auto;
+right: 100%;
+margin: -25px 17px 0 20px;
+width: 358px;
+box-shadow: none;
+}
+.notes_outer_container.popover>.popover_inner:last-child {
+position: relative;
+top: 23px;
+-webkit-transform: translateZ(0);
+border-radius: 6px;
+overflow: hidden;
+}
+#tumblr_radar .notes_outer_container.popover .notes_container {
+border-radius: 6px;
+left: 0;
+margin: 0;
+overflow: hidden;
+padding: 0;
+position: relative;
+top: 15px;
+width: 100%;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+box-shadow: 0 0 0 1px rgba(0,0,0,0.15),0 4px 9px rgba(0,0,0,0.35);
+}
+.post_notes .notes_outer_container.popover>.popover_inner:last-child {
+position: relative;
+top: 23px;
+overflow: hidden;
+border-radius: 3px;
+-webkit-transform: translateZ(0);
+}
+.post_notes .notes_outer_container.popover .notes_container {
+position: relative;
+top: 15px;
+left: 0;
+width: 100%;
+margin: 0;
+padding: 0;
+overflow: hidden;
+box-shadow: 0 0 0 1px rgba(0,0,0,.1),0 5px 10px 0 rgba(0,0,0,.1);
+border-radius: 5px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+.popover_gradient>.popover_inner:last-child {
+webkit-border-top-right-radius: 3px;
+-webkit-border-top-left-radius: 3px;
+-moz-border-top-right-radius: 3px;
+-moz-border-top-left-radius: 3px;
+border-top-right-radius: 3px;
+border-top-left-radius: 3px;
+}
+.popover_gradient>.popover_inner:last-child {
+-webkit-border-bottom-right-radius: 3px;
+-webkit-border-bottom-left-radius: 3px;
+-moz-border-bottom-right-radius: 3px;
+-moz-border-bottom-left-radius: 3px;
+border-bottom-right-radius: 3px;
+border-bottom-left-radius: 3px;
+}
+.popover_gradient>.popover_inner:last-child, .popover_gradient.popover_blogs>.popover_inner:last-child {
+border-bottom-right-radius: 3px;
+border-bottom-left-radius: 3px;
+border-top-right-radius: 3px;
+border-top-left-radius: 3px;
+border-radius: 3px;
+}
+.popover_gradient>.popover_inner:first-child {
+border-top-right-radius: 3px;
+border-top-left-radius: 3px;
+}
+
+#tumblr_radar .notes_outer_container.popover .popover_scroll {
+position: relative;
+max-height: 600px;
+min-height: 45px;
+overflow-y: auto;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+.post_notes .notes_outer_container.popover .popover_scroll {
+position: relative;
+max-height: 600px;
+min-height: 45px;
+overflow-y: auto;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+.popover_gradient>.popover_inner:last-child {
+-webkit-border-bottom-right-radius: 3px;
+-webkit-border-bottom-left-radius: 3px;
+-moz-border-bottom-right-radius: 3px;
+-moz-border-bottom-left-radius: 3px;
+webkit-border-top-right-radius: 3px;
+-webkit-border-top-left-radius: 3px;
+-moz-border-top-right-radius: 3px;
+-moz-border-top-left-radius: 3px;
+}
+
+.popover_gradient>.popover_inner {
+padding: 4px 0;
+background: #fff;
+}
+
+.popover_gradient>.popover_inner, .popover.search_popover>.popover_inner {
+padding: 0 0 4px;
+background: #fff;
+}
+.popover_gradient>.popover_inner {
+background: #f3f3f3;
+box-shadow: inset 0 1px 0 rgba(255,255,255,.75);
+}
+#tumblr_radar .notes_outer_container.popover .notes {
+display: block;
+overflow: hidden;
+width: 356px;
+}
+.post_notes .notes_outer_container.popover .notes {
+display: block;
+overflow: hidden;
+width: 356px;
+padding: 0 10px;
+}
+
+ol.notes {
+word-break: break-word;
+}
+.notes {
+list-style-type: none;
+margin: 0;
+padding: 0;
+color: #999da2;
+font-family: "Helvetica Neue",Helvetica,"Lucida Grande",Arial,sans-serif;
+font-size: 12px;
+font-weight: normal;
+display: none;
+}
+#tumblr_radar .notes_outer_container.popover .more_notes_link_container {
+cursor: pointer;
+padding: 0;
+margin: 0;
+background-color: #fff;
+border: 0;
+color: #444;
+font-size: 13px;
+font-weight: bold;
+height: 46px;
+line-height: 20px;
+min-height: 0;
+text-align: center;
+width: 356px;
+border-radius: 0;
+box-shadow: none;
+}
+
+.post_notes .more_notes_link_container {
+width: 336px;
+height: 46px;
+padding: 0;
+margin: 0 10px;
+border: 0;
+line-height: 20px;
+min-height: 0;
+background-color: #fff;
+color: #444;
+font-size: 13px;
+font-weight: 700;
+text-align: center;
+cursor: pointer;
+border-radius: 0;
+box-shadow: none;
+}
+
+.notes_loading {
+display: block;
+padding: 13px 17px 13px 17px;
+}
+#tumblr_radar .notes_outer_container.popover .more_notes_link {
+color: #444;
+display: block;
+padding: 13px 17px 13px 17px;
+text-decoration: none;
+}
+.post_notes .notes_outer_container.popover .more_notes_link {
+color: #444;
+display: block;
+padding: 13px 17px;
+text-decoration: none;
+}
+.radar .radar_controls_buttons {
+display: block;
+height: 37px;
+padding-top: 12px;
+float: right;
+}
+.radar .radar_button {
+display: block;
+float: right;
+position: relative;
+border: 0;
+overflow: hidden;
+width: 22px;
+height: 25px;
+text-indent: -999em;
+opacity: .31;
+cursor: pointer;
+-webkit-background-clip: padding-box;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+margin-left: 14px;
+}
+.radar .radar_button.last:before {
+border-right: 0;
+}
+.radar .radar_button:before {
+display: block;
+position: absolute;
+overflow: hidden;
+top: 10px;
+right: 0;
+bottom: 10px;
+left: 0;
+content: ' ';
+border-left: none;
+pointer-events: none;
+}
+.radar .radar_button.like i {
+background-position: -499px -213px;
+}
+.radar .radar_button i {
+display: block;
+position: relative;
+background: url('/images/dashboard_master_sprite.png?4b630eed411f1db1e1d2e2ae373e5706') 0 0 no-repeat;
+height: 100%;
+/*-webkit-transition: opacity .1s ease;
+-moz-transition: opacity .1s ease;
+transition: opacity .1s ease;*/
+}
+.radar .radar_button.middle {
+width: 22px;
+}
+.radar .radar_button {
+display: block;
+float: right;
+position: relative;
+border: 0;
+overflow: hidden;
+width: 22px;
+height: 25px;
+text-indent: -999em;
+opacity: .31;
+cursor: pointer;
+-webkit-background-clip: padding-box;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+margin-left: 14px;
+}
+.radar .radar_button:before {
+display: block;
+position: absolute;
+overflow: hidden;
+top: 10px;
+right: 0;
+bottom: 10px;
+left: 0;
+content: ' ';
+border-left: none;
+pointer-events: none;
+}
+.radar .radar_button.reblog i {
+background-position: -499px -269px;
+}
+.radar .radar_button i {
+display: block;
+position: relative;
+background: url('/images/dashboard_master_sprite.png?4b630eed411f1db1e1d2e2ae373e5706') 0 0 no-repeat;
+height: 100%;
+-webkit-transition: opacity .1s ease;
+-moz-transition: opacity .1s ease;
+transition: opacity .1s ease;
+}
+/*推介部落格*/
+.identity .controls_section.follow_list.recommended_tumblelogs>li, .identity .controls_section.follow_list.trending_tumblelogs>li {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+width: 100%;
+}.identity .controls_section li:first-child {
+border-top-width: 0!important;
+}
+
+
+#popover_legal {
+position: relative;
+}
+.identity .controls_section.user_list .avatar_img {
+border-radius: 3px;
+display: block;
+height: 37px;
+width: 37px;
+opacity: 0;
+}
+
+
+
+
+.pagination {
+padding-left: 85px;
+width: 540px;
+}
+
+
