@@ -14,7 +14,7 @@
     "covfail": "./node_modules/istanbul/bin/_istanbul cover ./node_modules/mocha/bin/_mocha",
     "covw1": "NODE_ENV=test istanbul cover index.js",
     "covw": "istanbul cover node_modules/mocha/bin/mocha",
-    "karma": "./node_modules/karma/bin/karma start --single-run",
+    "karma": "./node_modules/karma/bin/karma start",
     "test": "./node_modules/mocha/bin/_mocha ./test/hello.test.js",
     "testdoc": "./node_modules/mocha/bin/_mocha ./test/hello.test.js --reporter doc",
     "cov": " istanbul cover _mocha ./test/hello.test.js",

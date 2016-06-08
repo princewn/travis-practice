@@ -1404,7 +1404,6 @@ pre.debug {
 	height: 5px;
 	margin-left: 7px;
 	display: inline-block;
-	background: -400px -230px url('/images/dashboard_master_sprite.png?4b630eed411f1db1e1d2e2ae373e5706') no-repeat transparent
 }
 #nav .nav_item .nav_menu {
 	position: absolute;
@@ -4319,7 +4318,6 @@ body.scrollverlay_active {
 .post_form_wrapper.detached .arrow {
 	width: 12px;
 	height: 23px;
-	background: url("/images/dashboard_master_sprite.png?4b630eed411f1db1e1d2e2ae373e5706") no-repeat -396px -247px transparent;
 	position: absolute;
 	left: -11px;
 	top: 22px;
@@ -4682,7 +4680,6 @@ a.post_avatar_link.animating,.ask_container a.post_avatar_link {
 	margin: -10px 0 0;
 	overflow: hidden;
 	text-indent: -999em;
-	background: url('/images/dashboard_master_sprite.png?4b630eed411f1db1e1d2e2ae373e5706') -397px -94px no-repeat;
 	opacity: .31
 }
 #reblog_as {

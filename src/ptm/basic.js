@@ -22,23 +22,5 @@ page.open('https://www.taobao.com/', function(status) {
     return document.title;
   });
   console.log('Page title is ' + title);
+  phantom.exit();
 });
-
-// function buttonClick(){
-//   page.includeJs("http://path/to/jquery.min.js", function() {
-//     page.evaluate(function() {
-//       $("button").click();
-//     });
-//     phantom.exit()
-//   });
-// }
-// function innerFunc(){
-//   page.evaluate(function() {
-//     console.log(document.title);
-//   });
-//   phantom.exit();
-// }
-// function renderPics(){
-//   page.render('google_home.jpeg', {format: 'jpeg', quality: '100'});
-//   phantom.exit();
-// }

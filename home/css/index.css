@@ -137,7 +137,6 @@ transition-duration: 0;
 transition-timing-function: ease;
 }
 .reblog_follow_button:not(.icon_follow_rounded_small)::before {
-background: #a1a1a1 url('/images/dashboard_master_sprite.png?v=cab1c7cbf936a1197c3521dd488703ff') -400px -39px no-repeat;
 content: '';
 }
 .reblog_follow_button:before {

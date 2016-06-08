@@ -53,9 +53,34 @@ io.on('connection', function(socket){
 			});
 		});
 	});
-	// socket.on('unitRsp', function(stdout){
-	// 	io.emit('unitRsp', stdout);
-	// });
+	socket.on('ui', function(msg){
+		console.log(msg);
+		var name = process.argv[2];
+		var exec = require('child_process').exec;
+		var child = exec('cd /', function(err, stdout, stderr) {
+			exec('cd fd/www/travis-practice', function(err, stdout, stderr) {
+				exec('phantomjs ./src/ptm/ptm.js', function(err, stdout, stderr) {
+					    if (err) throw err;
+					    console.log(stdout);
+						io.emit('uiRsp', '请至项目文件根目录的截图文件夹中查看截图'+stdout);
+				});
+			});
+		});
+	});
+	socket.on('func', function(msg){
+		console.log(msg);
+		var name = process.argv[2];
+		var exec = require('child_process').exec;
+		var child = exec('cd /', function(err, stdout, stderr) {
+			exec('cd fd/www/travis-practice', function(err, stdout, stderr) {
+				exec('casperjs ./src/ptm/casper.js', function(err, stdout, stderr) {
+					    if (err) throw err;
+					    console.log(stdout);
+						io.emit('funcRsp', '请至项目文件根目录的截图文件夹中查看截图'+stdout);
+				});
+			});
+		});
+	});	
 });
 
 http.listen(3000, function(){

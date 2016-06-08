@@ -163,7 +163,6 @@ height: 0;
 width: 0;
 padding: 10px;
 overflow: hidden;
-background: -397px -93px url('/tumblrwn/images/dashboard_master_sprite.png') no-repeat;
 opacity: .31;
 text-indent: -999em;
 vertical-align: -5px;
@@ -236,7 +235,6 @@ transition-timing-function: ease;
 }
 
 .reblog_follow_button:not(.icon_follow_rounded_small)::before {
-background: #a1a1a1 url('/tumblrwn/images/dashboard_master_sprite.png') -400px -39px no-repeat;
 content: '';
 }
 .reblog_follow_button.active i, .reblog_follow_button:hover i, .reblog_follow_button.onboard i {
@@ -440,15 +438,14 @@ float: left;
 position: relative;
 top: 0;
 left: 0;
-width: 100px;
 height: 20px;
-padding: 61px 1px 18px 0;
+padding: 61px 1px 0px 0;
+margin-left: 35px;
 color: #696969;
 font-size: 15px;
 opacity: .9;
 font-weight: normal;
 text-decoration: none;
-background: transparent url(/images/post_type_div.png?f3b5918095c6e5f5fc2d8ada71dc3b8e) no-repeat right center;
 }
 .new_post_label i.icon_post_text {
 color: #444;
