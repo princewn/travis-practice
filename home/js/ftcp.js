@@ -52,6 +52,10 @@ $(function(){
 		location.href = 'http://localhost:3000/public/all';
 	}
 	function covFilter(){
-		$('.post_media').append('<iframe src="../coverage/lcov-report/index.html"></iframe>');
+		$('.post_media').append('<iframe src="../coverage/lcov-report/index.html" style="width:540px;height:540px" class="run-result"></iframe>');
 	}
 });
+
+
+
+

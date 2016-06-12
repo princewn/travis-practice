@@ -9,6 +9,9 @@ app.use(express.static('home'));
 app.get('/', function (req, res) {
 	res.sendFile('./indexwn.html', { root : __dirname + '/home'});
 });
+app.get('/coverage/lcov-report/index.html', function (req, res) {
+	res.sendFile('./index.html', { root : __dirname + '/coverage/lcov-report/'});
+});
 app.get('/unit', function(req, res){
 	res.sendFile('./indexwn.html', { root : __dirname + '/home'});
 	var name = process.argv[2];
@@ -50,6 +53,7 @@ io.on('connection', function(socket){
 					    console.log(stdout);
 						io.emit('coverRsp', stdout);
 				});
+				// io.emit('coverRsp', stdout);			
 			});
 		});
 	});
