@@ -1,1 +1,2 @@
-# travis-practice
+<img src="https://segmentfault.com/a/1190000004415437" />
+[![Coverage Status](https://coveralls.io/repos/github/princewn/travis-practice/badge.svg?branch=master)](https://coveralls.io/github/princewn/travis-practice?branch=master)

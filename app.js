@@ -38,7 +38,6 @@ io.on('connection', function(socket){
 					    if (err) throw err;
 					    console.log(stdout);
 						io.emit('unitRsp', stdout);
-						console.log("_________测试完成__________");
 				});
 			});
 		});
@@ -55,7 +54,6 @@ io.on('connection', function(socket){
 						io.emit('coverRsp', stdout);
 				});
 				// io.emit('coverRsp', stdout);	
-			    console.log("_________测试完成__________");						
 			});
 		});
 	});
@@ -69,7 +67,6 @@ io.on('connection', function(socket){
 					    if (err) throw err;
 					    console.log(stdout);
 						io.emit('uiRsp', '请至项目文件根目录的截图文件夹中查看截图'+stdout);
-						console.log("_________测试完成__________");						
 				});
 			});
 		});
@@ -84,7 +81,6 @@ io.on('connection', function(socket){
 					    if (err) throw err;
 					    console.log(stdout);
 						io.emit('funcRsp', '请至项目文件根目录的截图文件夹中查看截图'+stdout);
-						console.log("_________测试完成__________");						
 				});
 			});
 		});
